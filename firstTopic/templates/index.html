@@ -1,0 +1,21 @@
+
+
+  {% extends 'index2.html' %}   <!--It inharite index2.html file which includes header and footer-->
+  {% block content %}
+        <h1>jinja 2 template practice page</h1>
+        {{name}}
+        <br>
+        <ol>
+            {% for i in li %}
+               <li>{{i}} </li>
+               <br>
+               {% if name in li %}
+                   <p>{{name}} is found in list</p>
+                {% else %}
+                   <p>name is not found</p>
+               {% endif %}
+            {% endfor %}
+        </ol>
+        <br>
+        {{li}}
+        {% endblock %}
