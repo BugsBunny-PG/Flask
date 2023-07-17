@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>message</title>
+    </head>
+    <body>
+     <center>   
+    {% with messg=get_flashed_messages() %}
+        {% if messg %}
+          {% for m in messg %}
+             {{ m }}
+          {% endfor %}
+        {% endif %}
+    {% endwith %}
+        <h1>{{ name }}</h1>
+        <br><br>
+        <a href="{{url_for('logout')}}">logout</a>
+     </center>
+    </body>
+
+</html>
