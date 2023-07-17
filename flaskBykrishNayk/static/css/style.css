@@ -1,0 +1,13 @@
+.center{
+    text-align:center;
+    margin:10px;
+    padding: 10px;
+    border: 2px solid black;
+    display:auto;
+    justify-content:center;
+}
+input{
+    margin-bottom:20px;
+    width:150px;
+    float:center;
+}

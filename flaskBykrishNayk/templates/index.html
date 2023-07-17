@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>integrating html</title>
+       <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+         <!--This is attach with the help of jinja2 template where static is a folder name and file name is css/stle.css-->
+    <script type="text/javascript" src="{{url_for('static',filename='script/script.js')}}">
+        
+    </script>
+</head>
+<body>
+    <h1 >this one s the practice page for integrating html with flask This is a practice session</h1>
+    <div class="center">
+    <h2>Form</h2>
+    <Form action="/submit" method='POST'>
+        <label for="Science"> Science Marks:</label>
+        <input type="text" id='science' name="science" value=0>
+        <br>
+        <label for="Data Science"> Data Science marks:</label>
+        <input type="text" id="Data science" name="datascience" value=0>
+        <br>
+        <label for="Maths">Maths:</label>
+        <input type="text" id="Maths" name="maths" value=0>
+        <br>
+        <label for="C">C : </label>
+        <input type="text" id="C" name="c" value=0>
+        <br>
+        <input type="submit" value="Submit">
+
+        <br>
+        <p>if you click on the submit button form data will be sent  on  submit page</p>
+    </div>
+</body>
+</html>

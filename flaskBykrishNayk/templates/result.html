@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Result page</title>
+    </head>
+    <body>
+        <h1> Final Result</h1>
+        {% if sc>80 %}
+        {# this is a comment section #}
+        <p1> Student passed with {{sc}} marks</p>   <!--this is done bye jina 2 template name sc must be same in main file wher it takes input-->
+        {% else %}
+          <p>Student passed with average marks {{ sc }}</p>
+        {% endif %}   <!--This is closed condition--> 
+    </body>
+</html>
